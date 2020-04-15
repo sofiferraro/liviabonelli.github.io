@@ -94,13 +94,17 @@ main div.dropdown-toggle a {
   font-family: 'Montserrat', 'Century gothic', sans-serif;
   font-weight: 300;
   font-size: 2.3rem;
-  font-weight: 900;
+  font-weight: 400;
  text-transform: lowercase;
   margin: .4rem 0 0 0;
   font-size: 1rem;
   letter-spacing: 0.22rem;
   color: #b3b3b3;
   text-decoration: none;
+  transition: filter 1s;
+}
+main div.dropdown-toggle a:hover{
+	filter: brightness(70%);
 }
 main div.dropdown-toggle.link {text-decoration: none;}
 /*
@@ -231,15 +235,9 @@ svg{width:10em;
 	}
 }
 
-.play{position: absolute;
-	z-index: 111;
-	display: none;
-	}
-.play-img{width: 3em;}
+.firma-livia-nav{width:3em}
 
-.play a:focus{display: none;}
-.tamaño-textor-reel{font-size: .8em;
-					padding-left: 1.4em;}
+
 
 @media (min-width: 700px) and (orientation: landscape){
 	ul{margin: 0;
