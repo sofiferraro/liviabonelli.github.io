@@ -213,6 +213,13 @@ main div.dropdown-info ul li ul li {
   font-size: 1.0rem;
 }
 .dropdown-toggle::after{border: none;}
+main {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*------------------------------DROPDOWN FIN---------------------------------*/
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
@@ -280,7 +287,12 @@ svg{width:10em;
 													
 														.hover-transition{transition: filter .7s;
 																			cursor: pointer;}
-														.hover-transition:hover{filter: brightness(70%);
+														.hover-transition:hover{filter: brightness(50%);
 																} 
+														.hover-transition-invert{filter: brightness(80%);
+																				transition: filter .7s;
+																				cursor: pointer;}
+														.hover-transition-invert:hover{filter: brightness(100%);
+														} 		
 	
 }
