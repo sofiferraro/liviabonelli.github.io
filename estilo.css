@@ -224,6 +224,10 @@ main {
 /*------------------------------DROPDOWN FIN---------------------------------*/
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
 .instagram{display: none}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #ffffff9e;
+}
 
 .navbar-inverse .navbar-nav .nav-link {background-color:transparent}
 
@@ -261,11 +265,18 @@ svg{width:10em;
 				margin: 0;
 				
 				}
+.navbar-inverse .navbar-nav .nav-link {
+					color: #c9302cdb;
+					text-shadow: #0e0e0e 5px 6px 18px;
+				}				
+.dropdown-item:focus, .dropdown-item:hover{color: #1fa89d;}
+
 .retratos1{background-image: url(imagenes/fondonegro.gif);}
 
 @media (min-width: 700px) and (orientation: landscape){
 	ul{margin: 0;
 		padding-inline-start:0;}
+	
 														.dropdown-item.active, .dropdown-item:active{background: transparent;}
 														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
 														.htrescelu{font-size: 5rem;}
@@ -307,7 +318,21 @@ svg{width:10em;
 																				transition: filter .7s;
 																				cursor: pointer;}
 														.hover-transition-byn:hover{filter: grayscale(100%);
-														} 		
-
-	
+														} 	
+														 .lightbox-div {display:flex;
+																	background-color: rgba(0, 0, 0, 0.678);
+																	top:0;
+																	justify-content: center;
+																	}
+														.display-none{display: none;
+																		transition: opacity 5s;
+																		opacity: 0;}				
+														.display-none:active .display-none:focus{display: block;
+																	transition: opacity 5s;
+																	opacity: 1;}	
+														
+																		  
+														.display-block {
+																			opacity: 1;
+																		  }
 }
