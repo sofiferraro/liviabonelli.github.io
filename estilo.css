@@ -267,7 +267,7 @@ svg{width:10em;
 				}
 .navbar-inverse .navbar-nav .nav-link {
 					color: #c9302cdb;
-					text-shadow: #0e0e0e 5px 6px 18px;
+					text-shadow: #0e0e0e 3px 3px 30px;
 				}				
 .dropdown-item:focus, .dropdown-item:hover{color: #1fa89d;}
 
