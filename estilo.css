@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+body{width: 100%;}
+
+.video {background-color: #0e0e0e;
+        width: 100%;
+		height: 100vh;}
+		
+.animacion-body{background-color: #0e0e0e;
+	
+	width: 100%;
+	height: 100vh;}		
+a{transition: filter .7s;}
+a:hover{filter: brightness(70%);
+		} 
+a:link, a:visited, a:active {
+	
+    text-decoration:none;
+}	
+
+.portada {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+.livia-portada{width: 100%;
+	height: 100vh;
+	background-image: url(imagenes/fondorojo.gif);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;}		
+	.firmalivia{width: 4em;}
+.text-center{text-align: center}
+.hover:hover{filter: brightness(70%);}
+.hover-inv:hover{filter: brightness(30%);}
+.shadow{text-shadow:   2px 8px 8px #000000;}
+.subtitulo{display: flex;
+			flex-direction: row;
+			justify-content: space-between;}
+
+.texto-blanco{ color: white;
+				font-family: 'Montserrat', sans-serif; }
+.texto-gris{color: #a5a5a5;}
+.montserrat{font-family: 'Montserrat', sans-serif;}	
+
+.bold{font-weight: 700}
+.thin{font-weight: 200;}				  
+.htrescelu{font-size: 2rem;}
+.hseiscelu{font-size: 1rem;
+			font-weight: 200;}
+
+.hsietecelu{font-size: .8em;}
+.copyright{position: absolute;
+			top:95%}
+.column{display: flex;
+		flex-direction: column;}
+.logo5{width: 1.2em;
+		z-index: 100;}
+.page-footer{background-color: #232323;}					
+.copy{background-color: #191919;}
+.fondo-blanco{background-color: #fff;}
+.margin-0{margin:0;
+					padding: 0;
+					padding-right: 0;
+					padding-left: 0;}
+
+
+.dropdown-menu{background-color: transparent;
+				border:0;
+				padding: 0;
+                margin: 0;}
+
+.dropdown-item{padding: .5em;
+				margin: 0;
+				color:#a5a5a5;
+				}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
+.instagram{display: none}
+
+.navbar-inverse .navbar-nav .nav-link {background-color:transparent}
+
+#mypath{
+	stroke-opacity: .2;
+	stroke-dashoffset: 1000;
+	stroke-dasharray: 50;
+	animation-name: padda;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+}
+svg{width:10em;
+	height: 3em;
+	}
+@keyframes padda {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.play{position: absolute;
+	z-index: 111;
+	display: none;
+	}
+.play-img{width: 3em;}
+
+.play a:focus{display: none;}
+.tamaño-textor-reel{font-size: .8em;
+					padding-left: 1.4em;}
+
+@media (min-width: 700px) and (orientation: landscape){
+														.dropdown-item.active, .dropdown-item:active{background: transparent;}
+														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
+														.htrescelu{font-size: 5rem;}
+														.hseiscelu{font-size: 2.4rem;
+															font-weight: 200;}
+														.instagram{display: block}
+														.livia-portada{
+																			width: 100%;
+																			height: 100vh;
+																			/*background-image: url(imagenes/ruidonegro.gif);*/
+																			background-image: url(imagenes/fondorojo.gif);
+																			background-position: center;
+																			-webkit-background-size: cover;
+																			background-size: cover;
+																			background-repeat: no-repeat;
+																			/*background-attachment: fixed;*/
+					
+																			}
+														.firmalivia{width: 6em;}
+
+														.tamaño-texto-liv{font-size: 1.2em;}
+														.tamaño-texto-liv:hover{opacity: .5;
+																				cursor: pointer;}					
+																			
+														.htrescelu{font-size: 2rem;}
+														.hseiscelu{font-size: 1rem;}
+													
+	
+	
+}
