@@ -273,7 +273,8 @@ svg{width:10em;
 														.htrescelu{font-size: 2rem;}
 														.hseiscelu{font-size: 1rem;}
 													
-														.hover-transition{transition: filter .7s;}
+														.hover-transition{transition: filter .7s;
+																			cursor: pointer;}
 														.hover-transition:hover{filter: brightness(70%);
 																} 
 	
