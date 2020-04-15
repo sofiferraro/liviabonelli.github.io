@@ -96,14 +96,14 @@ main div.dropdown-toggle a {
   font-size: 2.3rem;
   font-weight: 900;
  text-transform: lowercase;
-  margin: 1.2rem 0 0 0;
+  margin: .4rem 0 0 0;
   font-size: 1rem;
   letter-spacing: 0.22rem;
   color: #b3b3b3;
   text-decoration: none;
 }
 main div.dropdown-toggle.link {text-decoration: none;}
-
+/*
 main div.dropdown-toggle.link:hover,
 main div.dropdown-toggle a.link:hover,
 main div.dropdown-toggle.link a:hover,
@@ -118,7 +118,7 @@ main div.dropdown-toggle.link a.open,
 main div.dropdown-toggle a.link a.open {
   cursor: pointer;
   color: rgba(250, 250, 250, 0.719);
-}
+}*/
 main div.dropdown-info {
   display: none;
 }
@@ -205,6 +205,7 @@ main div.dropdown-info ul li ul li {
   font-size: 1.0rem;
 }
 .dropdown-toggle::after{border: none;}
+
 /*------------------------------DROPDOWN FIN---------------------------------*/
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
 .instagram{display: none}
@@ -270,6 +271,8 @@ svg{width:10em;
 														.htrescelu{font-size: 2rem;}
 														.hseiscelu{font-size: 1rem;}
 													
-	
+														.hover-transition{transition: filter .7s;}
+														.hover-transition:hover{filter: brightness(70%);
+																} 
 	
 }
