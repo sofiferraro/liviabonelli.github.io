@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0",maximun-scale=1.0> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>	Livia Bonelli </title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="shortcut icon" href="imagenes/firmalivia.png">
+	
+</head>
+<body class="portada livia-portada-menu">
+	<main>
+		
+			
+        <section >
+           
+            <div class="dropdown-container">
+                <div class="dropdown-toggle link texto-blanco montserrat thin tamaño-texto-liv">RETRATOS</div>
+                <div class="dropdown-info pt-2">
+                    <ul class="menu-ul">
+                        <li><a class=" " href="byn.html" >1 </a></li>
+                        <li><a class=" " href="analogico.html">2</a></li>
+                      
+                    </ul>
+                      
+                </div>
+            </div>
+         </section>
+            
+        
+        <section >
+            <div class="dropdown-container">
+                <div class="dropdown-toggle link texto-blanco montserrat thin tamaño-texto-liv">TRABAJOS</div>
+                <div class="dropdown-info pt-2 ">
+                    <ul class="menu-ul"> 
+                        <li><a class=" texto-blanco montserrat thin " href="teatro.html">2019</a></li>
+                        <li><a class=" texto-blanco montserrat thin " href="musica.html">2018</a></li>
+                   
+                    </ul class="menu-ul">
+                    
+                </div>
+            </div>
+        </section>
+			
+	
+	</main>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropdown-toggle").click(function(){
+            $(this).toggleClass("open")
+            $(this).parent().children(".dropdown-info").slideToggle("slow");
+        });
+    });
+</script>
+
+</body>
+</html>

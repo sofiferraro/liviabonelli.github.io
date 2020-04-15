@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+
+.transition5 {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+  }
+
 body{width: 100%;}
+
 
 .video {background-color: #0e0e0e;
         width: 100%;
@@ -14,9 +25,10 @@ a:hover{filter: brightness(70%);
 		} 
 a:link, a:visited, a:active {
 	
-    text-decoration:none;
+	text-decoration:none;
+	color: white;
 }	
-
+li{list-style: none;}
 .portada {
 		display: flex;
 		justify-content: center;
@@ -30,7 +42,17 @@ a:link, a:visited, a:active {
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;}		
-	.firmalivia{width: 4em;}
+	
+.livia-portada-menu{width: 100%;
+	height: 100vh;
+	background-image: url(imagenes/fondonegro.gif);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;}
+
+.firmalivia{width: 4em;}	
+
 .text-center{text-align: center}
 .hover:hover{filter: brightness(70%);}
 .hover-inv:hover{filter: brightness(30%);}
@@ -66,16 +88,124 @@ a:link, a:visited, a:active {
 					padding-left: 0;}
 
 
-.dropdown-menu{background-color: transparent;
-				border:0;
-				padding: 0;
-                margin: 0;}
+/*---------------------DROPDOWN COMIENZO--------------------------*/
+main div.dropdown-toggle,
+main div.dropdown-toggle a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  font-weight: 900;
+ text-transform: lowercase;
+  margin: 1.2rem 0 0 0;
+  font-size: 1rem;
+  letter-spacing: 0.22rem;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+main div.dropdown-toggle.link {text-decoration: none;}
 
-.dropdown-item{padding: .5em;
-				margin: 0;
-				color:#a5a5a5;
-				}
+main div.dropdown-toggle.link:hover,
+main div.dropdown-toggle a.link:hover,
+main div.dropdown-toggle.link a:hover,
+main div.dropdown-toggle a.link a:hover,
+main div.dropdown-toggle.link:hover,
+main div.dropdown-toggle a.link:hover,
+main div.dropdown-toggle.link a:hover,
+main div.dropdown-toggle a.link a:hover,
+main div.dropdown-toggle.link.open,
+main div.dropdown-toggle a.link.open,
+main div.dropdown-toggle.link a.open,
+main div.dropdown-toggle a.link a.open {
+  cursor: pointer;
+  color: rgba(250, 250, 250, 0.719);
+}
+main div.dropdown-info {
+  display: none;
+}
+main div.dropdown-info a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #e4e4e4;
+  position: relative;
+}
+main div.dropdown-info a:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(155, 155, 155);
+  content: '';
+  display: block;
+  height: 0.05rem;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+main div.dropdown-info a:hover {
+  cursor: pointer;
+}
+main div.dropdown-info a:hover:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(180, 13, 13);
+  content: '';
+  display: block;
+  height: 0.08rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+main div.dropdown-info ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #3D3D3D;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
 
+
+
+.negrita {font-weight: 700;}
+
+ul{margin: 0;
+	padding-inline-start:0;}
+.menu-ul{text-align: center;
+		 padding-right: .5em;}	
+
+
+main div.dropdown-info ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  
+  text-decoration: none;
+  color: rgba(231, 231, 231, 0.658);
+  font-size: .9rem;
+  margin-top: 1em ;
+  text-align: center;
+}
+main div.dropdown-info ul li a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+main div.dropdown-info ul li ul {
+  margin-left: 0rem;
+}
+main div.dropdown-info ul li ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.0rem;
+  color: #3D3D3D;
+  font-size: 1.0rem;
+}
+.dropdown-toggle::after{border: none;}
+/*------------------------------DROPDOWN FIN---------------------------------*/
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
 .instagram{display: none}
 
@@ -111,6 +241,8 @@ svg{width:10em;
 					padding-left: 1.4em;}
 
 @media (min-width: 700px) and (orientation: landscape){
+	ul{margin: 0;
+		padding-inline-start:0;}
 														.dropdown-item.active, .dropdown-item:active{background: transparent;}
 														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
 														.htrescelu{font-size: 5rem;}
