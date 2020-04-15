@@ -303,10 +303,10 @@ svg{width:10em;
 																				cursor: pointer;}
 														.hover-transition-invert:hover{filter: brightness(100%);
 														} 
-														.hover-transition-byn{filter: grayscale(100%);
+														.hover-transition-byn{filter: grayscale(0%);
 																				transition: filter .7s;
 																				cursor: pointer;}
-														.hover-transition-byn:hover{filter: grayscale(0%);
+														.hover-transition-byn:hover{filter: grayscale(100%);
 														} 		
 
 	
