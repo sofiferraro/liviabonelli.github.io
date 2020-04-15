@@ -51,7 +51,10 @@ li{list-style: none;}
 	background-size: cover;
 	background-repeat: no-repeat;}
 
-.firmalivia{width: 4em;}	
+.firmalivia{width: 4em;
+			filter: brightness(0%);
+			transition: filter .7s;}
+.firmalivia:hover{filter: brightness(30%)}				
 
 .text-center{text-align: center}
 .hover:hover{filter: brightness(70%);}
