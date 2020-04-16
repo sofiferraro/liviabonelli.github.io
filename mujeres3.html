@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0",maximun-scale=1.0> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>	Livia Bonelli </title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="shortcut icon" href="imagenes/firmalivia.png">
+</head>
+<body class="retratos1">
+<!-- NAV -->
+    <nav id="menu" class="navbar navbar-toggleable-md navbar-inverse bg-color fixed-top topbar3 ">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img class="firma-livia-nav" src="imagenes/firmaliviablanca.png" alt=""></a>
+
+      <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle texto-negro" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              retratos
+            </a>
+            <div class="dropdown-menu texto-negro" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item texto-negro hover-transition-invert" href="retratos1.html">1</a>
+              <a class="dropdown-item texto-negro hover-transition-invert" href="retratos2.html">2</a>
+            </div>
+          </li>
+          
+          <li class="nav-item texto-negro" id="active2">
+            <a class="nav-link texto-negro" data-scroll href="fotografia.html">trabajos</a>
+          </li>         
+           <li class="nav-item texto-negro" id="active3">
+            <a class="nav-link texto-negro" data-scroll href="contacto.html">contacto</a>
+          </li>
+
+        </ul>
+       <!-- <div>
+          <a target="_blank" href="https://www.instagram.com/so.fiferraro/"><img class="logo5 m-2 instagram" src="iconos/instagrambla.svg" alt="instagram"></a>
+
+        </div>-->
+
+      </div>
+    </nav>
+
+
+<!--FIN DEL NAV -->
+
+
+
+<div class="container-fluid">
+    <div class="row"> 
+        <img id="thumb1" onclick="mostrarLightbox()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/1thumb.jpg" alt="">
+        <img id="thumb2" onclick="mostrarLightbox2()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/2thumb.jpg" alt="">
+        <img id="thumb3" onclick="mostrarLightbox3()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/3thumb.jpg" alt="">
+        <img id="thumb4" onclick="mostrarLightbox4()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/4thumb.jpg" alt="">
+        <img id="thumb5" onclick="mostrarLightbox5()" class="col-lg-4 p-2 hover-transition-byn" src="imagenes/mujeres/5thumb.jpg" alt="">
+        <img id="thumb6" onclick="mostrarLightbox6()" class="col-lg-4 p-2 hover-transition-byn" src="imagenes/mujeres/6thumb.jpg" alt="">
+        <img id="thumb7" onclick="mostrarLightbox7()" class="col-lg-4 p-2 hover-transition-byn" src="imagenes/mujeres/7thumb.jpg" alt="">
+        <img id="thumb8" onclick="mostrarLightbox8()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/8thumb.jpg" alt="">
+        <img id="thumb9" onclick="mostrarLightbox9()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/9thumb.jpg" alt="">
+        <img id="thumb10" onclick="mostrarLightbox10()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/10thumb.jpg" alt="">
+        <img id="thumb11" onclick="mostrarLightbox11()" class="col-lg-3 p-2 hover-transition-byn" src="imagenes/mujeres/11thumb.jpg" alt="">
+        <img id="thumb12" onclick="mostrarLightbox12()" class="col-lg-4 p-2 hover-transition-byn" src="imagenes/mujeres/12thumb.jpg" alt="">
+        <img id="thumb13" onclick="mostrarLightbox13()" class="col-lg-4 p-2 hover-transition-byn" src="imagenes/mujeres/13thumb.jpg" alt="">
+        <img id="thumb14" onclick="mostrarLightbox14()" class="col-lg-4 p-2 hover-transition-byn" src="imagenes/mujeres/14thumb.jpg" alt="">
+      
+       
+      
+
+    </div>
+</div>
+<!----------------------------------------LIGHTBOX COMIENZO--------------------------------------------->
+<div  id="lightbox1" class="display-none">
+    <div  onclick="cerrarLightbox()" class="lightbox-div fixed-top">
+        <img  id="lightboximg1" class="lightbox-img" src="imagenes/mujeres/1.jpg " alt="">
+    </div>
+</div>
+<div id="lightbox2" class="display-none">
+    <div  onclick="cerrarLightbox2()"  class="lightbox-div fixed-top">
+        <img  id="lightboximg2" class="lightbox-img" src="imagenes/mujeres/2.jpg " alt="">
+    </div>
+</div>
+<div id="lightbox3" class="display-none">
+    <div  onclick="cerrarLightbox3()" class="lightbox-div fixed-top">
+        <img  id="lightboximg3" class="lightbox-img" src="imagenes/mujeres/3.jpg " alt="">
+    </div>
+</div>
+<div  id="lightbox4" class="display-none">
+    <div  onclick="cerrarLightbox4()" class="lightbox-div fixed-top">
+        <img  id="lightboximg4" class="lightbox-img" src="imagenes/mujeres/4.jpg " alt="">
+    </div>
+</div>
+<div id="lightbox5" class="display-none">
+    <div  onclick="cerrarLightbox5()"  class="lightbox-div fixed-top">
+        <img  id="lightboximg5" class="lightbox-img" src="imagenes/mujeres/5.jpg " alt="">
+    </div>
+</div>
+<div id="lightbox6" class="display-none">
+    <div  onclick="cerrarLightbox6()" class="lightbox-div fixed-top">
+        <img  id="lightboximg6" class="lightbox-img" src="imagenes/mujeres/6.jpg " alt="">
+    </div>
+</div>
+<div id="lightbox7" class="display-none">
+    <div  onclick="cerrarLightbox7()" class="lightbox-div fixed-top">
+        <img  id="lightboximg7" class="lightbox-img" src="imagenes/mujeres/7.jpg " alt="">
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+<script>
+
+    /*-----------------MOSTRAR LIGHTBOX--------------------------*/
+var imagen = document.getElementById("lightboximg1");
+imagen.style.opacity = 0;
+
+  function mostrarLightbox(){
+    document.getElementById("lightbox1").style.display = "block";
+    imagen.style.opacity = "1";
+   
+    
+  }; 
+  
+  function mostrarLightbox2(){
+    document.getElementById("lightbox2").style.display = "block";
+    document.getElementById("lightbox2").style.opacity = "1";
+  }; 
+  function mostrarLightbox3(){
+    document.getElementById("lightbox3").style.display = "block";
+    document.getElementById("lightbox3").style.opacity = "1";
+  }; 
+  function mostrarLightbox4(){
+    document.getElementById("lightbox4").style.display = "block";
+    document.getElementById("lightbox4").style.opacity = "1";
+    
+  }; 
+  function mostrarLightbox5(){
+    document.getElementById("lightbox5").style.display = "block";
+    document.getElementById("lightbox5").style.opacity = "1";
+  }; 
+  function mostrarLightbox6(){
+    document.getElementById("lightbox6").style.display = "block";
+    document.getElementById("lightbox6").style.opacity = "1";
+  }; 
+  function mostrarLightbox7(){
+    document.getElementById("lightbox7").style.display = "block";
+    document.getElementById("lightbox7").style.opacity = "1";
+  }; 
+
+/*-----------------OCULTAR--------------------------*/
+
+  function cerrarLightbox(){
+        document.getElementById("lightbox1").style.display = "none";
+    };
+  function cerrarLightbox2(){
+        document.getElementById("lightbox2").style.display = "none";
+    };
+    function cerrarLightbox3(){
+        document.getElementById("lightbox3").style.display = "none";
+    }; 
+    function cerrarLightbox4(){
+        document.getElementById("lightbox4").style.display = "none";
+    };
+  function cerrarLightbox5(){
+        document.getElementById("lightbox5").style.display = "none";
+    };
+    function cerrarLightbox6(){
+        document.getElementById("lightbox6").style.display = "none";
+    }; 
+    function cerrarLightbox7(){
+        document.getElementById("lightbox7").style.display = "none";
+    }; 
+</script>
+
+</body>
+</html>

@@ -273,6 +273,13 @@ svg{width:10em;
 
 .retratos1{background-image: url(imagenes/fondonegro.gif);}
 
+/*-----------mujeres modal------------------*/
+.modal-content {background-color: rgba(150, 150, 150, 0);
+				border:none;
+				}
+.modal-body{padding: 0;}				
+
+				
 @media (min-width: 700px) and (orientation: landscape){
 	ul{margin: 0;
 		padding-inline-start:0;}
@@ -323,16 +330,40 @@ svg{width:10em;
 																	background-color: rgba(0, 0, 0, 0.678);
 																	top:0;
 																	justify-content: center;
+																	align-items: center;
+																	height: 100vh;
 																	}
 														.display-none{display: none;
 																		transition: opacity 5s;
-																		opacity: 0;}				
-														.display-none:active .display-none:focus{display: block;
-																	transition: opacity 5s;
-																	opacity: 1;}	
+																		opacity:1 ;
+																		height: 100%;}				
+														 
 														
+														.lightbox-img{height: 90vh;
+																		opacity: 0;
+																	transition: opacity 5s;}	
+														.lightbox-img::after{opacity: 1;}						  
+														/*
+														#container {
+															opacity: 0;
+															-webkit-transition: all 0.5s ease-in-out;
+															-moz-transition: all 0.5s ease-in-out;
+															-ms-transition: all 0.5s ease-in-out;
+															-o-transition: all 0.5s ease-in-out;
+															transition: all 0.5s ease-in-out;
+														  }*/
+
+														  /*----------------------------MODAL FOTOS LIGHTBOX ----------------------------*/
+														  .modal-dialog {margin-top: 1em;
+															width: 40%;} 
+														  .modal-dialog-vertical-1{width: 33.5%;}		
+															.modal-dialog-vertical-2{width: 36.5%;}	
+															.modal-dialog-vertical-3{width: 43%;
+																					margin-top:2em ;}
+															.modal-dialog-vertical-4{width: 38%;}	
+															.modal-dialog-vertical-5{width: 60%;}	
+															.modal-dialog-vertical-6{width: 50%;}	
+
+
 																		  
-														.display-block {
-																			opacity: 1;
-																		  }
 }
