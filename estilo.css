@@ -168,6 +168,7 @@ main div.dropdown-info a:hover:after {
   position: absolute;
   width: 100%;
 }
+
 main div.dropdown-info ul li {
   font-family: 'Montserrat', 'Century gothic', sans-serif;
   font-weight: 300;
@@ -177,8 +178,37 @@ main div.dropdown-info ul li {
   font-weight: 700;
   font-size: 1rem;
 }
-
-
+.subrayado-rojo a:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(155, 155, 155);
+	content: '';
+	display: block;
+	height: 0.05rem;
+	left: 0;
+	position: absolute;
+	width: 0;
+  }
+.subrayado-rojo a:hover {
+	cursor: pointer;
+  }
+  .subrayado-rojo a:hover:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(180, 13, 13);
+	content: '';
+	display: block;
+	height: 0.08rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
+  }
 
 .negrita {font-weight: 700;}
 
@@ -279,7 +309,7 @@ svg{width:10em;
 				}
 .modal-body{padding: 0;}				
 
-				
+.texto-blanco{color: #e4e4e4;}				
 @media (min-width: 700px) and (orientation: landscape){
 	ul{margin: 0;
 		padding-inline-start:0;}
