@@ -251,9 +251,11 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+.navbar{background-color: black;
+		}
 /*------------------------------DROPDOWN FIN---------------------------------*/
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83);
+																}
 .instagram{display: none}
 a:link, a:visited, a:active {
     text-decoration: none;
@@ -297,7 +299,7 @@ svg{width:10em;
 				
 				}
 .navbar-inverse .navbar-nav .nav-link {
-					color: #c9302cdb;
+					color: #ffffffdb;
 					text-shadow: #0e0e0e 3px 3px 30px;
 				}				
 .dropdown-item:focus, .dropdown-item:hover{color: #1fa89d;}
@@ -352,10 +354,10 @@ svg{width:10em;
 																				cursor: pointer;}
 														.hover-transition-invert:hover{filter: brightness(100%);
 														} 
-														.hover-transition-byn{filter: grayscale(100%);
+														.hover-transition-byn{filter: grayscale(0%);
 																				transition: filter .7s;
 																				cursor: pointer;}
-														.hover-transition-byn:hover{filter: grayscale(0%);
+														.hover-transition-byn:hover{filter: grayscale(100%);
 														} 	
 														 .lightbox-div {display:flex;
 																	background-color: rgba(0, 0, 0, 0.678);
