@@ -244,7 +244,7 @@ main div.dropdown-info ul li ul li {
   font-size: 1.0rem;
 }
 .dropdown-toggle::after{border: none;}
-main {
+main.menu-portada {
     /* display: block; */
     display: flex;
     flex-direction: column;
@@ -252,8 +252,169 @@ main {
     align-items: center;
 }
 .navbar{background-color: black;
+		background-image: url(imagenes/fondonegro.gif);
 		}
 /*------------------------------DROPDOWN FIN---------------------------------*/
+
+/*-------------------------------DROPDOWN NAVBAR ---------------------------------------*/
+
+
+main div.dropdown-toggle2,
+main div.dropdown-toggle2 a {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: filter 1s;
+}
+main div.dropdown-toggle a:hover{
+	filter: brightness(70%);
+}
+main div.dropdown-toggle.link {text-decoration: none;}
+
+main div.menu-nav-info {
+  display: none;
+}
+main div.menu-nav-info a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #b30000;
+  position: relative;
+}
+main div.menu-nav-info a:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(155, 155, 155);
+  content: '';
+  display: block;
+  height: 0.05rem;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+main div.menu-nav-info a:hover {
+  cursor: pointer;
+}
+main div.menu-nav-info a:hover:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 0.08rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+main div.menu-nav-info ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #3D3D3D;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.subrayado-rojo a:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(155, 155, 155);
+	content: '';
+	display: block;
+	height: 0.05rem;
+	left: 0;
+	position: absolute;
+	width: 0;
+  }
+.subrayado-rojo a:hover {
+	cursor: pointer;
+  }
+  .subrayado-blanco a:hover:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(245, 245, 245);
+	content: '';
+	display: block;
+	height: 0.08rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
+  }
+
+.negrita {font-weight: 700;}
+
+ul{margin: 0;
+	padding-inline-start:0;}
+.menu-ul-nav{
+		 padding-right: .5em;
+			text-align: left;}	
+
+
+main div.dropdown-info ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  
+  text-decoration: none;
+  color: rgba(231, 231, 231, 0.658);
+  font-size: .9rem;
+  margin-top: 1em ;
+  text-align: center;
+}
+main div.dropdown-info ul li a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+main div.dropdown-info ul li ul {
+  margin-left: 0rem;
+}
+main div.dropdown-info ul li ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 2.0rem;
+  color: #3D3D3D;
+  font-size: 1.0rem;
+}
+
+main div.dropdown-info ul li ul{
+	display: none;
+  }
+/*
+  main div.dropdown-info ul li:hover > ul{
+	display: block;
+  }*/
+
+.dropdown-toggle::after{border: none;}
+main.menu-nav{
+	 display: block;
+	 padding-left: .5em; 
+    
+}
+
+
+
+
+
+
+
+
+/*--------------------------FIN-----DROPDOWN NAVBAR ---------------------------------------*/
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83);
 																}
 .instagram{display: none}
@@ -312,7 +473,9 @@ svg{width:10em;
 				}
 .modal-body{padding: 0;}				
 
-.texto-blanco{color: #e4e4e4;}				
+.texto-blanco{color: #e4e4e4;}	
+
+
 @media (min-width: 700px) and (orientation: landscape){
 	ul{margin: 0;
 		padding-inline-start:0;}
