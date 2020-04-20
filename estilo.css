@@ -566,7 +566,7 @@ svg{width:10em;
 																		filter: brightness(70%);
 																		transition: all .7s;}
 
-															a.submenu:hover{color:#1fa89d !important;
+															a.submenu:hover{color:rgb(218, 18, 18) !important;
 																filter: brightness(100%); }
 															
 															
