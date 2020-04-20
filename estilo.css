@@ -155,7 +155,7 @@ main div.dropdown-info a:after {
 main div.dropdown-info a:hover {
   cursor: pointer;
 }
-main div.dropdown-info a:hover:after {
+ul .subsubmenu a:hover:after {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -407,7 +407,7 @@ main.menu-nav{
 }
 
 
-
+a.submenu:hover{color:#1fa89d}
 
 
 
@@ -422,6 +422,7 @@ a:link, a:visited, a:active {
     text-decoration: none;
     color: #ffffff9e;
 }
+
 
 .navbar-inverse .navbar-nav .nav-link {background-color:transparent}
 
@@ -561,5 +562,13 @@ svg{width:10em;
 															.modal-dialog-vertical-6{width: 50%;}	
 
 
+															a.submenu{color: rgb(255, 255, 255) !important;
+																		filter: brightness(70%);
+																		transition: all .7s;}
+
+															a.submenu:hover{color:#1fa89d !important;
+																filter: brightness(100%); }
+															
+															
 																		  
 }
