@@ -494,7 +494,7 @@ svg{width:10em;
 																			height: 100vh;
 																			/*background-image: url(imagenes/ruidonegro.gif);*/
 																			background: #000;
-																			background-image: url(imagenes/fondorojo.gif);
+																			background-image: none;
 																			background-position: center;
 																			-webkit-background-size: cover;
 																			background-size: cover;
@@ -572,5 +572,24 @@ svg{width:10em;
 																filter: brightness(100%); }
 															
 															
-																		  
+.banner{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+
+
 }
