@@ -251,9 +251,11 @@ main.menu-portada {
     justify-content: center;
     align-items: center;
 }
-.navbar{background-color: black;
+.topbar3 {background-color: black;
 		background-image: url(imagenes/fondonegro.gif);
 		}
+
+
 /*------------------------------DROPDOWN FIN---------------------------------*/
 
 /*-------------------------------DROPDOWN NAVBAR ---------------------------------------*/
