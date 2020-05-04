@@ -599,7 +599,7 @@ main div.menu-tipo, main div.menu-tipo a {font-family: -apple-system,system-ui,B
 
 .dropdown-menu-fondo{
 	background-image: url(imagenes/fondonegro.gif) ;
-	width: 100%;
+	width: 16em;
 	
 }
 }
