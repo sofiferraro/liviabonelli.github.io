@@ -602,4 +602,10 @@ main div.menu-tipo, main div.menu-tipo a {font-family: -apple-system,system-ui,B
 	width: 16em;
 	
 }
+.dropdown-menu-fondo2{
+	background-image: url(imagenes/fondonegro.gif) ;
+	width: 8em;
+	
+}
+
 }
