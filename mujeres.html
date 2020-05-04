@@ -22,15 +22,15 @@
         <ul class="navbar-nav mr-auto">
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle texto-negro" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle3 texto-negro mr-2" href="#" id="navbarDropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
               personas
             </a>
-            <div class="dropdown-menu texto-negro" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu texto-negro dropdown-info2" aria-labelledby="navbarDropdownMenuLink">
              
               <main class="menu-nav">
               <section>               
-                <div class="dropdown-container">
-                  <div class="dropdown-toggle2 link texto-blanco montserrat thin tamaño-texto-liv  hover-transition ">retratos</div>
+                <div class="dropdown-container menu-tipo">
+                  <div class="dropdown-toggle2 link texto-blanco montserrat thin tamaño-texto-liv  hover-transition menu-tipo ">retratos</div>
                     <div class="dropdown-info menu-nav-info pt-2">
                       <ul class="menu-ul-nav">
                           <li><a class="subrayado-blanco " href="retratos1.html" >1 </a></li>
@@ -43,16 +43,16 @@
           </section>
         </main>
        
-              <a class="dropdown-item texto-negro hover-transition-invert" href="retratos2.html">figura</a>
+              <a class="dropdown-item texto-negro hover-transition-invert" href="figura.html">figura</a>
             </div>
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle texto-negro" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle3 texto-negro mr-2" href="#" id="navbarDropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
               personal
             </a>
-            <div class="dropdown-menu texto-negro" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item texto-negro hover-transition-invert" href="retratos1.html">mujeres</a>
+            <div class="dropdown-menu texto-negro dropdown-info2" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item texto-negro hover-transition-invert" href="mujeres.html">mujeres</a>
             </div>
           </l
           i>      
@@ -310,14 +310,25 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
-        $(".dropdown-toggle2").hover(function(){
+        $(".dropdown-toggle2").click(function(){
             $(this).toggleClass("open")
             $(this).parent().children(".dropdown-info").slideToggle("slow");
             $("dropdown-info").children("ul").stop(true, true).slideToggle("slow");
         });
     });
 
+    $(document).ready(function(){
+        $(".dropdown-toggle3").click(function(){
+            $(this).toggleClass("open")
+            $(this).parent().children(".dropdown-info2").slideToggle("fast");
+            $("dropdown-info2").children("ul").stop(true, true).slideToggle("fast");
+            
+        });
+    });
+
+
 /*
+    
     $(document).ready(function(){
         $(".menu-nav-info").hover(function(){
             $(this).toggleClass("open")
