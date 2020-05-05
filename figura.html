@@ -594,7 +594,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function(){
-      $(".dropdown-toggle2").click(function(){
+      $(".dropdown-toggle2").mouseover(function(){
           $(this).toggleClass("open")
           $(this).parent().children(".dropdown-info").slideToggle("slow");
           $("dropdown-info").children("ul").stop(true, true).slideToggle("slow");
