@@ -20,11 +20,11 @@
    align-items: center;
     align-content: center; }                
 
-.hover-transition{transition: all .7s;
+.hover-transition{transition: all .9s;
         cursor: pointer;
         }
 .hover-transition:hover{filter: brightness(80%);
-    transform: scale(1.01);
+    transform: scale(1.02);
 }  
 
 .img-expo{width: 100%;}
@@ -44,10 +44,13 @@ h6{color: rgba(189, 189, 189, 0.842);
     font-weight: 200;}   
 .aling-right{text-align: right;
                 font-size: .8rem;}
-
+video{width: 97.26%;}
  .overflow {
          width: 99%;
+         height: 99%;
          overflow: hidden;
                 }                
 
-                
+ .topbar3 {background-color: black;
+                    background-image: url(imagenes/fondoazul.gif);
+                    }               
