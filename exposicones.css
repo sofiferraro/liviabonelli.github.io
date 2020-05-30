@@ -1,0 +1,40 @@
+.exposiciones{background-image: url(imagenes/fondoazul.gif);
+                }
+
+.img-bullbeny{width: 50%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    align-content: center;  }
+
+.div-bullbeny{display: flex;
+                height: 100vh;
+                justify-content: center;
+               align-items: center;
+                align-content: center; 
+                margin: 0;}                
+
+.centrar{margin: 0;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    align-content: center; }                
+
+.hover-transition{transition: filter .7s;
+        cursor: pointer;}
+.hover-transition:hover{filter: brightness(80%);
+}  
+
+.img-expo{width: 100%;}
+
+.modal-lg{width: 100%;}
+
+h3{font-weight: 700;
+    color: white;
+    margin-left: 0;
+    padding-left: 0;}
+
+h4{font-weight: 400;
+        color: white;
+        margin-left: 0;
+        padding-left: 0;}   
